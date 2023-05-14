@@ -2,7 +2,7 @@ import { Telegraf } from "telegraf"
 import { code } from "telegraf/format"
 import { message } from "telegraf/filters"
 import { getConfig } from "./config"
-import dotenv from "dotenv"
+import * as dotenv from "dotenv"
 import { gpt } from "./gpt";
 
 dotenv.config();

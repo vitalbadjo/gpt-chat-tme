@@ -21,6 +21,7 @@ class OpenAi {
     } catch (error) {
       console.log("Error when handling request to gpt-chat", (error as any).message)
     }
+    return ""
   }
 
 }
