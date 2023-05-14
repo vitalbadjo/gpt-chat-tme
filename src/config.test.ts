@@ -10,7 +10,7 @@ it("should throw Error if variable does not exist", () => {
   expect.assertions(1);
   try {
     getConfig("TME_TOKE" as any)
-  } catch (e) {
+  } catch (e: any) {
     expect(e.message).toBe("TME_TOKE is does not exist in .env file");
   }
 })
@@ -26,7 +26,7 @@ it("should throw Error if variable does not exist", () => {
   expect.assertions(1);
   try {
     getConfig(["TME_TOKE"] as any)
-  } catch (e) {
+  } catch (e: any) {
     expect(e.message).toBe("TME_TOKE is does not exist in .env file");
   }
 })
